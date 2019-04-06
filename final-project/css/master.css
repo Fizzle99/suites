@@ -105,15 +105,12 @@ right: 10px;
 
 /*Grid and Media Queries*/
 
-@media (min-width: 1200px){
+@media (min-width: 1250px){
 
 .grid {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 80px 80px 20px;
 }
 
 }
-
-    
 
