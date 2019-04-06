@@ -1,9 +1,14 @@
-.map {
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: rgba(128, 128, 128, 0.616);
-    width: 75%;
-    height: auto;
+iframe {
+    margin: 0px 20px;
+}
+
+.info {
+    height: 600px;
+    padding-left: 5px;
+}
+.form {
+    width: 40%;
+}
+.submission {
+ margin-left: 40%;
 }

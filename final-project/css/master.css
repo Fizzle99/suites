@@ -68,6 +68,11 @@ article {
     width: 75%;
     height: auto;
 }
+
+article img {
+    height: 200px;
+    width: 400px;
+}
     
 
 .fixed {
