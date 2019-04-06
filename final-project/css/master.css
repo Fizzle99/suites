@@ -3,21 +3,36 @@
 * { margin: 0; box-sizing: border-box; }
 
 nav {
-   height: 80px;
-   width: 100%; 
-   background-color: #c1946a;	
+text-align: center;
+position: absolute;
+z-index: 1;
+height: 80px;
+width: 100%; 
+background-color: #c1946a;	
 }
 
 .navigation { list-style: none; text-align: center; margin-bottom: 20px;}
   .navigation li:first-child { display: block;}
   .navigation li { display: none;}
-  .navigation a { display: block;	color: black; padding: 30px;	text-align: center;	text-decoration: none; font-size: 20px;}
+  .navigation a { display: block; color: black; padding: 30px; text-align: center; text-decoration: none; border-bottom: solid; font-size: 20px; height: 80px; background-color: #c1946a}
   .navigation a:hover {	color: #000; background-color: #fff; font-weight: 700;	}
   
 
-.responsive li { display: inline-block; }
+.responsive li { display: block; margin-bottom:}
+
+@media only screen and (min-width: 45em) {
+    .navigation li:first-child { display: none;}
+    .navigation li { display: inline-block; text-align: center;}
+    .navigation li a { color: black;}
+}
+
 
 /*General Formatting*/
+
+header {
+    height: auto;
+    margin-bottom: 50px;
+}
 
 body {
     background-color: 	#F5F5F5;
@@ -89,25 +104,16 @@ right: 10px;
 }
 
 /*Grid and Media Queries*/
-@media (min-width: 1000px){
-.grid {
-    display: grid;
-    grid-template-columns: 10% 90%;
- }
-}
+
 @media (min-width: 1200px){
 
 .grid {
     display: grid;
     grid-template-columns: 25% 75%;
+    grid-template-rows: 80px 80px 20px;
 }
 
 }
 
     
-@media only screen and (min-width: 45em) {
-    .navigation li:first-child { display: none;}
-    .navigation li { display: inline-block; text-align: center;}
-    .navigation li a { color: rgb(255, 255, 255);}
-}
 
