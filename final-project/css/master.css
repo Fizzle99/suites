@@ -73,9 +73,27 @@ article img {
     height: 200px;
     width: 400px;
 }
+
+footer {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: #405d27;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    background-color: white;
+    color: black;
+}
     
 
 .fixed {
+z-index: 1;
 padding-top: 3px;
 font-size: 20px;
 margin: auto;
