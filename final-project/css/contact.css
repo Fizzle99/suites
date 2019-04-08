@@ -12,3 +12,14 @@ iframe {
 .submission {
  margin-left: 40%;
 }
+
+/*Media Queries*/
+
+@media (max-width: 1000px) {
+    .info {
+        height: auto;
+    }
+    iframe {
+        width: 500px;
+    }
+}
