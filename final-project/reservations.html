@@ -49,51 +49,90 @@
 
                 <form>
                                 <ul class="flex-outer">
+                                        
                                   <li>
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" id="first-name" placeholder="Enter your first name here">
+                                        <h3>Reservation Information</h3>
                                   </li>
+
                                   <li>
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" id="last-name" placeholder="Enter your last name here">
+                                    <label for="Location">Location</label>
+                                    <input type="text" id="Location" placeholder="Enter where you'd like to stay here.">
                                   </li>
+
                                   <li>
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" placeholder="Enter your email here">
+                                    <label for="Arrival">Arrival Date</label>
+                                    <input type="date" id="arrival">
                                   </li>
+
                                   <li>
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" placeholder="Enter your phone here">
+                                    <label for="Departure">Departure Date</label>
+                                    <input type="date" id="departure">
                                   </li>
+
                                   <li>
-                                    <label for="message">Message</label>
-                                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                                    <label for="rooms">Room Type</label>
+                                    <input list="type" name="roomType"> <br>
+                                        <datalist id="type">
+                                                <option value="Flash Flood">
+                                               <option value="Hail">
+                                               <option value="Hurricane">
+                                               <option value="Thunderstorm">
+                                               <option value="Tornado">
+                                        </datalist>
                                   </li>
+
                                   <li>
-                                    <p>Age</p>
-                                    <ul class="flex-inner">
-                                      <!-- list items here -->
-                                    </ul>
+                                    <label for="message">How many Rooms?</label>
+                                    <input type="text" id="roomnumber" pattern="[0-5]" placeholder="Maximum of 5 per reservation.">
                                   </li>
+
                                   <li>
+                                    <h3>Registrant Information</h3>
+                                  </li>
+
+                                  <li>
+                                                <label for="first-name">First Name</label>
+                                                <input type="text" id="first-name" placeholder="Enter your first name here">
+                                              </li>
+            
+                                              <li>
+                                                <label for="last-name">Last Name</label>
+                                                <input type="text" id="last-name" placeholder="Enter your last name here">
+                                              </li>
+            
+                                              <li>
+                                                <label for="email">Email</label>
+                                                <input type="email" id="email" placeholder="Enter your email here">
+                                              </li>
+            
+                                              <li>
+                                                <label for="phone">Phone</label>
+                                                <input type="tel" id="phone" placeholder="Enter your phone here">
+                                              </li>
+
+                                              <li>
+                                                        <label for="home">Home State or Country</label>
+                                                        <input type="text" id="home">
+                                                </li>
+
+                                  <li>
+                                                <label for="message">Message and/or Special Accomadations</label>
+                                                <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                                </li>
+
+                                  
                                     <button type="submit">Submit</button>
-                                  </li>
-                                </ul>
+                                  
+                        </ul>
                               </form>
 </article>
 
 
 
- 
-<div class="fixed">       
-    <a href="reservations.html">Book Reservation</a>
-      
-</div>
 
 <footer>
-
-        <p id="demo2"></p> <br>
-        Information sourced from OpenWeatherMap, find them <a href="http://openweathermap.org/">-Here!-</a>
+                <p id="demo2"></p> <br>
+        
 
         <script src="js/currentdate.js"></script>
            
