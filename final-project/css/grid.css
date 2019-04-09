@@ -1,0 +1,30 @@
+*{box-sizing: border-box;}
+
+.suitebox:hover {box-shadow: 0 0 50px #333;}
+
+.suitebox {
+   width: 450px;
+   border-radius: 3px;
+   height: 500px;
+   background-color: rgba(128, 128, 128, 0.616);
+}
+
+.suitegrid {
+   margin-left: 50px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 450px 650px;
+    grid-gap: 150px;
+    height: auto;
+ }
+ 
+ .suitegrid img {
+    float: center;
+    width: 400px;
+    height: 200px;
+ }
+
+ .missioncontent { 
+    margin: auto;
+    width: 75%;
+ }

@@ -11,7 +11,7 @@ width: 100%;
 background-color: #c1946a;	
 }
 
-.navigation { list-style: none; text-align: center; margin-bottom: 20px;}
+.navigation { list-style: none; text-align: left; margin-bottom: 20px; padding-left: 200px;}
   .navigation li:first-child { display: block;}
   .navigation li { display: none;}
   .navigation a { display: block; color: black; padding: 30px; text-align: center; text-decoration: none; border-bottom: solid; font-size: 20px; height: 80px; background-color: #c1946a}
@@ -27,6 +27,23 @@ background-color: #c1946a;
 }
 
 
+.box h1 {
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 50px;
+    padding-top: 10px;
+    height: 80px;
+    color: white;
+    background-color: #405d27;
+    }
+    
+    .box h1 img {
+        border-radius: 50%;
+        height: 50px;
+        max-width: 50px;
+    }
+
+
 /*General Formatting*/
 
 header {
@@ -38,21 +55,6 @@ body {
     background-color: 	#F5F5F5;
 }
 
-.box h1 {
-font-size: 30px;
-font-style: italic;
-padding-left: 50px;
-padding-top: 10px;
-height: 80px;
-color: white;
-background-color: #405d27;
-}
-
-.box h1 img {
-    border-radius: 50%;
-    height: 50px;
-    max-width: 50px;
-}
 
 header {
     height: 100px;
@@ -69,11 +71,7 @@ article {
     height: auto;
 }
 
-article img {
-    float: left;
-    height: 200px;
-    width: 400px;
-}
+
 
 footer {
     padding: 10px;
@@ -91,6 +89,18 @@ footer a {
 footer a:hover{
     background-color: white;
     color: black;
+}
+
+.temple img {
+        margin: 0px 20px;
+        float: left;
+        height: 200px;
+        width: 400px;
+
+}
+
+.suites img {
+margin: 0 20px;
 }
     
 
@@ -130,11 +140,17 @@ right: 10px;
 
 /*Grid and Media Queries*/
 
-@media (min-width: 1250px){
+@media (max-width: 1200px) {
+    .navigation {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1400px){
 
 .grid {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 35% 65%;
 }
 
 }

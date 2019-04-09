@@ -7,6 +7,8 @@
 
 <link rel="stylesheet" href="css/master.css">
 
+<link rel="stylesheet" href="css/form.css">
+
 <script src="js/hamburger.js"></script>
  
 </head>
@@ -20,7 +22,7 @@
 <div class="box">
 
 
-<h1><img src ="images/logo.jpeg" alt="The Logo, depicting Payson Temple!"> Inns and Suites</h1>
+<h1><img src ="images/logo.jpeg" alt="The Logo, depicting Payson Temple!">Temple Inns and Suites</h1>
 
 </div>
 
@@ -43,28 +45,42 @@
 </Header>
 
 
-<article class="form">
-                <form action="thanks.html">
-               
-                        <h3 style="text-align: center;"> Contact Us!</h3><br>
-                               Enter your Full Name: <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required> <br>
-                               Enter your E-mail: <input type="text" name="email" required placeholder="Email"> <br>
-                               
-                               Enter your Phone Number 
-                               
-                               <input type="tel" name="phone" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" placeholder="xxx-xxx-xxxx"> <br>
-                               
-                               Enter your Zip Code: <input type="number" name="zip" required pattern="[09]{5}" placeholder="xxxxx"> <br>
-                               <br>
-                               Do you have any comments? <br>
-                               <input type="textarea" name="extrainfo">
-                 
-                 
-                 
-                               <div class="submission">
-                                      <input type="submit">
-                               </div>
-</form>
+<article>
+
+                <form>
+                                <ul class="flex-outer">
+                                  <li>
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" placeholder="Enter your first name here">
+                                  </li>
+                                  <li>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" placeholder="Enter your last name here">
+                                  </li>
+                                  <li>
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Enter your email here">
+                                  </li>
+                                  <li>
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" placeholder="Enter your phone here">
+                                  </li>
+                                  <li>
+                                    <label for="message">Message</label>
+                                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                                  </li>
+                                  <li>
+                                    <p>Age</p>
+                                    <ul class="flex-inner">
+                                      <!-- list items here -->
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <button type="submit">Submit</button>
+                                  </li>
+                                </ul>
+                              </form>
+</article>
 
 
 
