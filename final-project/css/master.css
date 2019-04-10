@@ -20,7 +20,7 @@ background-color: #c1946a;
 
 .responsive li { display: block; margin-bottom:}
 
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 50em) {
     .navigation li:first-child { display: none;}
     .navigation li { display: inline-block; text-align: center;}
     .navigation li a { color: black;}
@@ -28,6 +28,7 @@ background-color: #c1946a;
 
 
 .box h1 {
+    font-family: times, serif; 
     font-size: 30px;
     font-style: italic;
     padding-left: 50px;
@@ -140,18 +141,68 @@ right: 10px;
 
 /*Grid and Media Queries*/
 
-@media (max-width: 1200px) {
-    .navigation {
-        text-align: center;
+@media (max-width: 1400px) {
+    .grid {
+        display: grid;
+        grid-template-rows: 80px 40px;
     }
+
+    .title {
+        margin-top: 100px;
+    }
+
 }
 
 @media (min-width: 1400px){
 
-.grid {
-    display: grid;
-    grid-template-columns: 35% 65%;
-}
+    .grid {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+    
+    }
 
-}
 
+/*Medium Screen*/
+
+/*Small Screen*/
+
+@media (max-width: 800px) {
+
+    article {
+        margin-top: 80px;
+    }
+
+
+    .temple img {
+        padding-right: 20px;
+        height: 140px;
+        width: 280px;
+    }
+    
+    .fixed {
+        position: static;
+        margin-bottom: 5px;
+    }
+    .fixed:hover{
+        background-color:white;
+    }
+    .fixed a {
+        position: static;
+        margin: auto;
+        bottom: 10px;
+    }
+    .fixed a:hover {
+        position: static;
+
+        padding-top: 3px;
+font-size: 20px;
+margin: auto;
+height: 30px;
+width: 160px;
+text-align: center;
+border-radius: 25px;
+background-color: white;
+
+    }
+}
