@@ -33,11 +33,3 @@
 .smallbox a:hover {
     background-color: white;
 }
-
-/*Queries*/
-
-@media (max-width: 800px){
-    .smallbox {
-        padding-top: 20px;
-    }
-}
