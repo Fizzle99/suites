@@ -9,11 +9,13 @@
 
 <link rel="stylesheet" href="css/master.css">
 
-<!---Javascript-->
+<!---Javascript
+
+-->
 
 <script src="js/weather.js"></script>
 
-<script src="js/currentdate.js"></script>
+<script src="js/la.js"></script>
 
 <script src="js/hamburger.js"></script>
  
@@ -50,34 +52,39 @@
      
 </Header>
 
+<h2 style="text-align: center;" class="title">Temples</h2>
+
 <article class="temple">
-                <img src="images/pheonix.jpg"><br> 
+                <img src="images/pheonix.jpg" alt="Phoenix Temple!"><br> 
                 
                 <h4>Phoenix, Arizona Temple</h4> <br> 
                 5220 W Pinnacle Peak Rd, Glendale, AZ 85310 <br>
                 &#9743 (1) 623-474-9500 <br>
-                &#9826 Website: <a href="https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng">https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng</a><br>
+                &#9826 Website: <a href="https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng">https://www.lds.org/temples/details/phoenix-arizona-temple</a><br>
                 <h4>Weather</h4>
-                -High Temperature: <span id="currentTemp"></span> &#176 Fahrenheit <br>
-                -Humidity: <span id="currentHumidity"></span> % <br>
-                -Description: <span id="currentDescription"></span>
-                </article>
+                <p id="currentTemp"></p> <br>
+                <p id="currentHumidity"></p> <br>
+                
+        
+        </article>
                 
 <article class="temple">
-                                <img src="images/la.jpg"><br> 
+                                <img src="images/la.jpg" alt="LA Temple!"><br> 
                                 
                                 <h4>Los Angeles, California Temple</h4> <br> 
-                                5220 W Pinnacle Peak Rd, Glendale, AZ 85310 <br>
-                                &#9743 (1) 623-474-9500 <br>
-                                &#9826 Website: <a href="https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng">https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng</a><br>
-                                
+                                Los Angeles CA 90025-4718 <br>
+                                &#9743 (1) 310-474-5569<br>
+                                &#9826 Website: <a href="https://www.lds.org/temples/details/los-angeles-california-temple">https://www.lds.org/temples/details/los-angeles-california-temple</a><br>
                                 <h4>Weather</h4>
-                                -High Temperature: <span id="currentTemp"></span> &#176 Fahrenheit <br>
-                                -Humidity: <span id="currentHumidity"></span> %
+                                <span id="laTemp"></span> <br>
+                                <span id="laHumidity"></span> <br>
+
+                                
+                                
 </article>
 
 <article class="temple">
-                                                <img src="images/manhattan.jpg"><br> 
+                                                <img src="images/manhattan.jpg" alt="Manhattan Temple!"><br> 
                                                 
                                                 <h4>Manhattan, New York Temple</h4> <br> 
                                                 5220 W Pinnacle Peak Rd, Glendale, AZ 85310 <br>
@@ -85,12 +92,11 @@
                                                 &#9826 Website: <a href="https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng">https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng</a><br>
                                                 
                                                 <h4>Weather</h4>
-                                                -High Temperature: <span id="currentTemp"></span> &#176 Fahrenheit <br>
-                                                -Humidity: <span id="currentHumidity"></span> %
+                                                
 </article>
 
 <article class="temple">
-                                                                <img src="images/columbia.jpg"><br> 
+                                                                <img src="images/columbia.jpg" alt="Columbia Temple!"><br> 
                                                                 
                                                                 <h4>Columbia, South Carolina Temple</h4> <br> 
                                                                 5220 W Pinnacle Peak Rd, Glendale, AZ 85310 <br>
@@ -98,8 +104,7 @@
                                                                 &#9826 Website: <a href="https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng">https://www.lds.org/temples/details/phoenix-arizona-temple?lang=eng</a><br>
                                                                 
                                                                 <h4>Weather</h4>
-                                                                -High Temperature: <span id="currentTemp"></span> &#176 Fahrenheit <br>
-                                                                -Humidity: <span id="currentHumidity"></span> %
+                                                                
 </article>
 
 <div class="fixed">       
@@ -108,13 +113,14 @@
     </div>
     
     <footer>
-    
-            <p id="demo2"></p> <br>
-            Information sourced from OpenWeatherMap, find them <a href="http://openweathermap.org/">-Here!-</a>
-    
-               
-                  
-    </footer>
+
+                <p id="demo2"></p> <br>
+                Information sourced from OpenWeatherMap, find them <a href="http://openweathermap.org/">-Here!-</a>
+        
+                <script src="js/currentdate.js"></script>
+                   
+                      
+</footer>
 
 </body>
  

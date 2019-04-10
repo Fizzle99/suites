@@ -149,6 +149,7 @@ right: 10px;
 
     .title {
         margin-top: 100px;
+        margin-bottom: 20px;
     }
 
 }
@@ -168,11 +169,6 @@ right: 10px;
 /*Small Screen*/
 
 @media (max-width: 800px) {
-
-    article {
-        margin-top: 80px;
-    }
-
 
     .temple img {
         padding-right: 20px;
