@@ -54,6 +54,7 @@ header {
 
 body {
     background-color: 	#F5F5F5;
+    font-size: 16px;
 }
 
 
@@ -142,6 +143,7 @@ right: 10px;
 /*Grid and Media Queries*/
 
 @media (max-width: 1400px) {
+
     .grid {
         display: grid;
         grid-template-rows: 80px 40px;
@@ -163,12 +165,11 @@ right: 10px;
     
     }
 
-
-/*Medium Screen*/
-
-/*Small Screen*/
-
 @media (max-width: 800px) {
+
+    .options {
+        margin-bottom: 50px;
+    }
 
     .temple img {
         padding-right: 20px;

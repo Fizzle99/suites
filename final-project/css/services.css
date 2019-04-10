@@ -37,7 +37,7 @@
 /*Queries*/
 
 @media (max-width: 800px){
-    .options {
+    .smallbox {
         padding-top: 20px;
     }
 }

@@ -15,13 +15,33 @@ iframe {
 
 /*Media Queries*/
 
+@media (max-width: 1400px) {
+    .info {
+        height: 800px;
+    }
+    iframe {
+        float: center;
+        margin-right: 5px;
+        width: 600px;
+        height: 600px;
+    }
+}
+
 @media (max-width: 1000px) {
     .info {
-        height: auto;
+        height: 600px;
     }
     iframe {
         margin-right: 5px;
-        width: 300px;
+        width: 90%;
         height: 300px;
     }
 }
+
+@media (max-width: 800px) {
+    .info {
+        height: 500px;
+    }
+}
+
+
