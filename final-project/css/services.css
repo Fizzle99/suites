@@ -33,3 +33,7 @@
 .smallbox a:hover {
     background-color: white;
 }
+
+.box {
+    margin-top: 0px;
+}

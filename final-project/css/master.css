@@ -28,6 +28,7 @@ background-color: #c1946a;
 
 
 .box h1 {
+    margin-top: 0px;
     font-family: times, serif; 
     font-size: 30px;
     font-style: italic;
