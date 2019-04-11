@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Inns and Suites - Homepage </title>
+<title>Inns and Suites - Reservations </title>
 
 <link rel="stylesheet" href="css/master.css">
 
 <link rel="stylesheet" href="css/form.css">
+
+<link rel="stylesheet" href="css/validation.css">
 
 <script src="js/hamburger.js"></script>
  
@@ -60,22 +62,22 @@
 
                                   <li>
                                     <label for="Location">Location</label>
-                                    <input type="text" id="Location" placeholder="Enter where you'd like to stay here.">
+                                    <input type="text" id="Location" placeholder="Enter where you'd like to stay here." required>
                                   </li>
 
                                   <li>
                                     <label for="Arrival">Arrival Date</label>
-                                    <input type="date" id="arrival">
+                                    <input type="date" id="arrival" required>
                                   </li>
 
                                   <li>
                                     <label for="Departure">Departure Date</label>
-                                    <input type="date" id="departure">
+                                    <input type="date" id="departure" required>
                                   </li>
 
                                   <li>
                                     <label for="rooms">Room Type</label>
-                                    <input list="type" name="roomType"> <br>
+                                    <input list="type" name="roomType" required> <br>
                                         <datalist id="type">
                                                 <option value="Small">
                                                <option value="Medium">
@@ -86,7 +88,7 @@
 
                                   <li>
                                     <label for="message">How many Rooms?</label>
-                                    <input type="text" id="roomnumber" pattern="[0-5]" placeholder="Maximum of 5 per reservation.">
+                                    <input type="text" id="roomnumber" pattern="[0-5]" placeholder="Maximum of 5 per reservation." required>
                                   </li>
 
                                   <li>
@@ -95,12 +97,12 @@
 
                                   <li>
                                                 <label for="first-name">First Name</label>
-                                                <input type="text" id="first-name" placeholder="Enter your first name here">
+                                                <input type="text" id="first-name" placeholder="Enter your first name here" required>
                                               </li>
             
                                               <li>
                                                 <label for="last-name">Last Name</label>
-                                                <input type="text" id="last-name" placeholder="Enter your last name here">
+                                                <input type="text" id="last-name" placeholder="Enter your last name here" required>
                                               </li>
             
                                               <li>
@@ -110,7 +112,7 @@
             
                                               <li>
                                                 <label for="phone">Phone</label>
-                                                <input type="tel" id="phone" placeholder="Enter your phone here">
+                                                <input type="tel" id="phone" placeholder="Enter your phone here" required>
                                               </li>
 
                                               <li>
